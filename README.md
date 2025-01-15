@@ -1,75 +1,24 @@
-# @echristian/eslint-config
+# @echristian/package-starter
 
-A modern and opinionated ESLint configuration with TypeScript and JSX support.
+A minimal starter template for creating modern npm packages with TypeScript support.
 
-## Installation
+## Getting Started
 
-Using npm:
+1. Clone this repository
+2. Update package.json with your package details
+3. Update LICENSE with your information
+4. Add your code in `src/`
+5. Build your package with `pnpm build`
 
-```bash
-npm install -D @echristian/eslint-config eslint
-```
-
-Using yarn:
-
-```bash
-yarn add -D @echristian/eslint-config eslint
-```
-
-Using pnpm:
+## Development
 
 ```bash
-pnpm add -D @echristian/eslint-config eslint
+# Install dependencies
+pnpm install
+
+# Build the package
+pnpm build
+
+# Lint your code
+pnpm lint
 ```
-
-## Usage
-
-Create an `eslint.config.js` (or `eslint.config.ts`) file in your project root:
-
-```typescript
-import eslintConfig from "@echristian/eslint-config";
-
-export default eslintConfig({
-  // Configuration options here
-});
-```
-
-## Example Configurations
-
-### Basic TypeScript Project with JSX
-
-```typescript
-import eslintConfig from "@echristian/eslint-config";
-
-export default eslintConfig({
-  ignores: ["dist/"],
-  jsx: true,
-});
-```
-
-### TypeScript Project without Type Checking
-
-```typescript
-import eslintConfig from "@echristian/eslint-config";
-
-export default eslintConfig({
-  ignores: ["dist/"],
-  typescript: {
-    typeChecked: false,
-  },
-});
-```
-
-## Dependencies
-
-This config includes the following major dependencies:
-
-- `@eslint/js`: Core ESLint rules
-- `typescript-eslint`: TypeScript support
-- `@stylistic/eslint-plugin`: Style-related rules
-- `eslint-plugin-unused-imports`: Unused imports management
-- `eslint-plugin-perfectionist`: Additional best practices
-
-## License
-
-MIT - See [LICENSE](./LICENSE) for more information.
