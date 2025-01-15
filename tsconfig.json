@@ -9,7 +9,6 @@
     "isolatedDeclarations": true,
     "declaration": true,
 
-
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"]
